@@ -46,6 +46,15 @@ function botVoice(message) {
   if (message.includes('weather')) {
     speech.text = `I don't think you want to know... just enjoy your day!`;
   }
+  if (message.includes('how are you')) {
+    speech.text = `I'm fine, thank you for asking. How are you?`;
+  }
+  if (message.includes('joke')) {
+    speech.text = `What do you call a pig that does Karate?`;
+  }
+  if (message.includes('what')) {
+    speech.text = `A pork chop.. hahaha`;
+  }
 
   speech.volume = 1;
   speech.rate = 1.2;
